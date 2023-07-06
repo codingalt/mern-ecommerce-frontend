@@ -9,7 +9,7 @@ const initialState = {
 }
 // login
 export const login = createAsyncThunk('user/login', async (data) => {
-    console.log("login api called (changed)")
+    console.log("login api called new")
     const config = { headers: { 'Content-Type': 'application/json' }, withCredentials: true };
     try {
         const response = await axios.post(
