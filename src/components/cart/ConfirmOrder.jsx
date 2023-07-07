@@ -56,7 +56,7 @@ const ConfirmOrder = () => {
                             <div className='pl-2 md:pl-3 mt-3 flex flex-col pt-4'>
                                 {cartItems.map((item) => {
                                     return <div className="flex justify-between items-center border-t border-gray-200 py-6 last:border-b  last:border-gray-200" key={item.product}>
-                                        <div className='flex gap-3 items-center'>
+                                        <div className='flex gap-3'>
                                             <div className="aspect-w-1 min-w-[96px] md:min-w-[112px] overflow-hidden rounded-sm h-28 md:h-32 cursor-pointer bg-gray-200">
                                                 <img
                                                     src={item.image}
@@ -67,11 +67,11 @@ const ConfirmOrder = () => {
                                             <div>
                                                 <NavLink to={`/product/${item.product}`} className='text-base md:text-lg font-semibold'>{item.name}</NavLink>
                                                 {item.size && <p>Size: {item.size}</p>}
+                                                <p className='mt-1'>
+                                                    <small>Rs.</small> {item.price} * {item.quantity} = {item.price * item.quantity}
+                                                </p>
                                             </div>
                                         </div>
-                                        <p>
-                                        <small>Rs.</small> {item.price} * {item.quantity} = {item.price * item.quantity}
-                                        </p>
                                     </div>
                                 })}
                             </div>
