@@ -39,6 +39,7 @@ const Payment = () => {
         payBtn.current.disabled = true;
         payBtn.current.opacity = 0.5;
         // const config = { headers: { 'Content-Type': 'application/json' } };
+        const token = JSON.parse(localStorage.getItem('token'));
         const config = {
             headers: {
                 'Content-Type': 'application/json',
@@ -47,9 +48,9 @@ const Payment = () => {
         };
         try {
             const { data } = await axios.post(
-              "https://mern-ecommerce-2wa7.onrender.com/api/v1/payment/process",
-              paymentData,
-              config
+                "https://mern-ecommerce-2wa7.onrender.com/api/v1/payment/process",
+                paymentData,
+                config
             );
             const client_secret = data.client_secret;
             if (!stripe || !elements) return;
