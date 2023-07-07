@@ -67,6 +67,7 @@ const App = () => {
     store.dispatch(loadUser());
     getStripeApiKey()
   }, [])
+  console.log("stripeApiKey: ", stripeApiKey)
   // useEffect(() => {
   //   if(!isAuthenticated){
   //     store.dispatch(remove_cart());
