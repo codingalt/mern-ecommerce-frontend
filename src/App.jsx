@@ -67,11 +67,11 @@ const App = () => {
     store.dispatch(loadUser());
     getStripeApiKey()
   }, [])
-  useEffect(() => {
-    if(!isAuthenticated){
-      store.dispatch(remove_cart());
-    }
-  }, [error, isAuthenticated])
+  // useEffect(() => {
+  //   if(!isAuthenticated){
+  //     store.dispatch(remove_cart());
+  //   }
+  // }, [error, isAuthenticated])
   return (
     <>
       {/* {showHeaderAndFooter && <Navbar />} */}

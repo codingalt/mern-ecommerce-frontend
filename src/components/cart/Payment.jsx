@@ -35,6 +35,7 @@ const Payment = () => {
         totalPrice: orderInfo.totalPrice
     }
     const submitHandler = async (e) => {
+        console.log("payment")
         e.preventDefault();
         payBtn.current.disabled = true;
         payBtn.current.opacity = 0.5;
