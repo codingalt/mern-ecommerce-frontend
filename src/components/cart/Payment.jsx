@@ -114,7 +114,7 @@ const Payment = () => {
         <>
             <div className='pt-24 pb-10'>
                 <MetaData title="Payment" />
-                <div className="w-[90%] lg:w-[80%] mx-auto">
+                <div className="w-[95%] md:w-[94%] lg:w-[90%] mx-auto">
                     <CheckoutSteps activeStep={2} />
                     <div className="w-full sm:w-[400px] mx-auto">
                         <div className='text-center'>
