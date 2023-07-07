@@ -136,7 +136,7 @@ const NewProduct = () => {
                 <Formik
                     onSubmit={handleFormSubmit}
                     initialValues={initialValues}
-                    validationSchema={productSchema}
+                    validationSchema={productSchema}    
                 >
                     {({
                         values,
