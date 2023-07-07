@@ -35,7 +35,6 @@ const Payment = () => {
         totalPrice: orderInfo.totalPrice
     }
     const submitHandler = async (e) => {
-        console.log("payment")
         e.preventDefault();
         payBtn.current.disabled = true;
         payBtn.current.opacity = 0.5;
@@ -120,7 +119,7 @@ const Payment = () => {
                         <div className='text-center'>
                             <h2 className='text-xl font-bold border-b border-gray-400 pb-1 inline-block mb-5'>Card Info</h2>
                         </div>
-                        <form className='form' onClick={submitHandler}>
+                        <form onSubmit={submitHandler}>
                             <div className='mt-5 flex items-center'>
                                 <CreditCardIcon style={{ position: 'absolute', transform: 'translateX(10px)', fontSize: '18px', color: 'rgba(0,0,0,0.6)' }} />
                                 <CardNumberElement className='w-full border border-gray-500 rounded py-3 px-10' />
