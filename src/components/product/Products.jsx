@@ -239,7 +239,7 @@ const Products = () => {
                         </Dialog>
                     </Transition.Root>
 
-                    <main className="w-[96%] md:w-[94%] lg:w-[90%] mx-auto">
+                    <main className="w-[94%] lg:w-[90%] mx-auto">
                         <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
                             <h1 className="text-lg md:text-3xl lg:text-4xl font-semibold md:font-bold tracking-tight text-gray-900">New Arrivals</h1>
 

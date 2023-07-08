@@ -30,7 +30,7 @@ const ConfirmOrder = () => {
     return (
         <>
             <MetaData title="Confirm Order" />
-            <div className='pt-24 w-[95%] md:w-[94%] lg:w-[90%] mx-auto'>
+            <div className='pt-24 w-[94%] lg:w-[90%] mx-auto'>
                 <CheckoutSteps activeStep={1} />
                 <div className="grid grid-cols-1 gap-20 lg:grid-cols-12 mt-10 pb-16">
                     <div className="col-span-1 lg:col-span-7">
