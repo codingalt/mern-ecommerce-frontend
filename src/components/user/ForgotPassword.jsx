@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Loader from '../Loader';
 import { useAlert } from 'react-alert'
-import { clear_errors, forgotPassword } from '../../features/user/forgotPasswordSlice';
+import { clear_errors, forgotPassword, forgot_password_reset } from '../../features/user/forgotPasswordSlice';
 import MetaData from '../MetaData';
 import { InputAdornment } from '@mui/material';
 
@@ -38,6 +38,7 @@ const ForgotPassword = () => {
         else if (message) {
             if (!error) {
                 alert.success(message)
+                dispatch(forgot_password_reset())
             }
         }
     }, [dispatch, error, message, alert])

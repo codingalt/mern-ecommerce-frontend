@@ -60,7 +60,10 @@ const forgotPasswordSlice = createSlice({
     reducers: {
         clear_errors: (state)=>{
             state.error = ''
-        }
+        },
+        forgot_password_reset: (state)=>{
+            state.success = false
+        },
     },
     extraReducers: (builder)=>{
         builder.addCase(forgotPassword.pending, (state, action)=>{
@@ -90,4 +93,4 @@ const forgotPasswordSlice = createSlice({
 })
 
 export default forgotPasswordSlice.reducer
-export const { clear_errors } = forgotPasswordSlice.actions
+export const { clear_errors, forgot_password_reset } = forgotPasswordSlice.actions

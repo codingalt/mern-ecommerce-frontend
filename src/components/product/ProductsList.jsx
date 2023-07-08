@@ -27,7 +27,7 @@ const ProductsList = () => {
         <Loader />
         :
         <div className="bg-gray-50 py-5">
-          <div className="w-[96%] md:w-[94%] lg:w-[90%] mx-auto">
+          <div className="w-[94%] md:w-[94%] lg:w-[90%] mx-auto">
             <h2 className="text-xl font-semibold sm:text-2xl md:text-3xl sm:font-bold tracking-tight text-gray-600">New Arrivals</h2>
 
             <div className="mt-6 grid gap-x-2 sm:gap-x-5 gap-y-5 sm:gap-y-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-x-8">
